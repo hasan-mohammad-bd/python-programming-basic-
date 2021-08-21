@@ -1,0 +1,37 @@
+#print "hello world"
+#=========================================
+a = "hello world"
+print(a)
+
+
+#Print multiple argument 
+#=========================================
+a = 2
+b = 3
+c = 4
+print(a,b,c)
+
+
+#Using string formatting:
+#=========================================
+a = 2
+b = 3
+print("{}{}".format(a,b)) # sequential formatting pass value 
+print("{0}{1}".format(a,b)) # Formatting with number
+print("{name}{name2}".format(name=a,name2=b)) # formatting with explicit number
+
+
+#Pass value as tuple:
+#=========================================
+a = 2
+b = 3
+print("%s%s"%(a,b))
+
+
+#Pass value as dictionary:
+#=========================================
+a = 2
+b = 3
+c = 4
+print("%(hay)s%(hai)s"%{"hay":a,"hai":b})
+
