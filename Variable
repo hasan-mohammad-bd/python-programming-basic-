@@ -1,0 +1,90 @@
+#variable
+
+#	Start with the latter or underscore (_)
+#	Can’t start with number.
+#	Alpha-numeric characters and underscore can be used only. (a-z),(A-Z),(0-9),( _ )
+#	Case-sensitive: same latter but difference Case(small latter/capital latter) will very the variable. 
+#	if variable is same, the last variable will be granted to apply. 
+
+
+#global variable
+#global variable is declared without block.
+
+#Local variable
+#Local variable is declared in a block
+
+def china():
+    z = 20 #local variable 
+    print("china",x,y,z)
+
+
+def bangladesh():
+    z = 19 #local variable 
+    print("bangladesh",x,y,z)
+
+x = 10 #global variable 
+y = 15 #global variable
+z = 2 #global variable
+
+print("global", x, y, z)
+china()
+bangladesh()
+
+# If we want global effect with a local variable. Keyword: global is used. The keyword will work like global keyword.
+# In any block, any local variable value is mentioned, the global variable will not overweight the value.  
+
+def china():
+    global z
+    z = 20
+    print("china",x,y,z)
+
+
+def bangladesh():
+    print("bangladesh",x,y,z)
+
+x = 10
+y = 15
+z = 2
+
+print("global", x, y, z)
+china()
+bangladesh()
+
+# global (keyword) variable is effective on other golbal variable when it is declared after the global(keyword) declaration as below:
+
+def china():
+    global z, m
+    z = 20
+    m = 25
+    print("china",x,y,z,m)
+
+
+def bangladesh():
+    print("bangladesh",x,y,z,m)
+
+x = 10
+y = 15
+z = 2
+
+print("global", x, y, z) # here m will not be effective by global(keyword) variable 
+china()
+bangladesh()
+print("global", x, y, z, m) # here m variable will work because it is decleared after the declaration. 
+
+#nonlocal variable 
+# Nonlocal(keyword) variable make a local variable effective in all black except working as global, 
+# if a nested block uses it, the mother block variable value will change accordingly. On the other hand, nested block variable value will appear only. 
+# If there is no value of a nested block, mother block variable value will affect for both mother block & nested block. 
+
+def china():
+    s = 40
+
+    def bangladesh():
+        nonlocal s
+        s = 30
+        print("bangladesh",s)
+    bangladesh()
+    print("china",s)
+china()
+
+
