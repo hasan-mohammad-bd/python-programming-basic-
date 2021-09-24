@@ -1,4 +1,5 @@
 #variable
+#=========================================
 
 #	Start with the latter or underscore (_)
 #	Can’t start with number.
@@ -8,9 +9,11 @@
 
 
 #global variable
+#=========================================
 #global variable is declared without block.
 
 #Local variable
+#=========================================
 #Local variable is declared in a block
 
 def china():
@@ -72,6 +75,7 @@ bangladesh()
 print("global", x, y, z, m) # here m variable will work because it is decleared after the declaration. 
 
 #nonlocal variable 
+#=========================================
 # Nonlocal(keyword) variable make a local variable effective in all black except working as global, 
 # if a nested block uses it, the mother block variable value will change accordingly. On the other hand, nested block variable value will appear only. 
 # If there is no value of a nested block, mother block variable value will affect for both mother block & nested block. 
