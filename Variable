@@ -1,11 +1,11 @@
 #variable
 #=========================================
 
-#	Start with the latter or underscore (_)
-#	Can’t start with number.
-#	Alpha-numeric characters and underscore can be used only. (a-z),(A-Z),(0-9),( _ )
-#	Case-sensitive: same latter but difference Case(small latter/capital latter) will very the variable. 
-#	if variable is same, the last variable will be granted to apply. 
+# Start with the latter or underscore (_)
+# Can’t start with number.
+# Alpha-numeric characters and underscore can be used only. (a-z),(A-Z),(0-9),( _ )
+# Case-sensitive: same latter but difference Case(small latter/capital latter) will very the variable. 
+# if variable is same, the last variable will be granted to apply. 
 
 
 #global variable
