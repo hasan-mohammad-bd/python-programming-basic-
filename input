@@ -1,0 +1,18 @@
+#input
+#==============================================
+
+# Prompt means display message.
+# By default, user always give string type data.
+# To change string type, input data type before input ex: int(input(“hello”)
+
+q = input("enter your name: ")
+w = int(input("enter your age: "))
+e = float(input("what is your CGPA: "))
+
+print("Name: {}\nAge: {}\nCGPA: ".format(q,w,e))
+
+#Multiple input in one variable:
+#=============================================
+z,x,c,v,b,n = input("Enter numbers: ").split()
+
+print(z,x,c,v,b,n)
