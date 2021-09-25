@@ -1,0 +1,8 @@
+Keyword
+#=======================================
+# Variable can’t be assigned as keyword 
+# To see/check keyword:
+
+import keyword
+print(keyword.kwlist)  # show the key word list 
+print(keyword.iskeyword("pass")) # to find out the keyword is true or false 
