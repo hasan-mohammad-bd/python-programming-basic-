@@ -1,0 +1,117 @@
+# Arithmetic
+#========================================
+a = 4
+b = 17
+
+print(a + b)  # addition
+print(a - b)  # subtraction
+print(a * b)  # multiplication
+print(a / b)  # division float
+print(a // b) # division floor
+print(a % b)  # modulus
+print(a ** b) # power
+
+# Comparison/relation operation:
+#========================================
+#	Result will be bullion type
+
+a = 10
+b = 10
+
+print(a == b)  # equal
+print(a != b)  # not equal
+print(a > b)  # greater than
+print(a < b)  # less than
+print(a >= b)  # greater than or equal to
+print(a <= b)  # less than or equal to
+
+# Logical:
+#=======================================
+# Output will be bullion (true or false) type:
+
+a = 5
+b = 10
+
+print(a == 5 and b == 10)  #and
+print(a == 5 or b == 10)  #or
+print(not a == 5) #not
+
+
+# Membership operators:
+#======================================
+# Output will be bullion (true or false) type:
+
+a = "how are you"
+print("how" in a ) #in
+print("why" in a) #not in 
+print("are" not in a) #not in
+
+Identity operators:
+#========================================
+# Output will be bullion (true or false) type:
+# If a value is same for different variable, the values take the same memory location. To check this, below method is applied.  
+
+a = 5
+b = 5
+
+print(a is b) # is 
+print(a is not b)  # is not
+
+#Bitwise Operation:
+#========================================
+
+a = 10
+b = 5
+
+print(a & b) # Bitwise AND
+print(a | b)  # Bitwise OR
+print(~ b) # bitwise Not
+print(a ^ b) # bitwise XOR
+print(a >> 2) # bitwise right shift (here 2 bit right shift)
+print(a << 2) # bitwise left shift ( here 2 bit left shift)
+
+Assignment operators:
+#========================================
+
+b = 10
+b += 10
+print(b) # add equal
+b = 10
+b -= 10  # subtract equal
+print(b)
+b = 10
+b *= 1 # multiple equal
+print(b)
+b = 10 
+b /= 10 # divide equal
+print(b)
+b = 10
+b //= 10 # floor division equal 
+print(b)
+b = 10
+b %= 10 # modules equal
+print(b)
+b = 10
+b **= 10 # exponent equal
+print(b)
+b = 10
+b &= 10 # bitwise AND equal
+print(b)
+b = 10
+b |= 10 # bitwise OR equal
+print(b)
+b = 10
+b ^= 10 # bitwise XOR equal
+print(b)
+b = 10
+b >>= 10 # bitwise right equal
+print(b)
+b = 10
+b <<= 10 # bitwise left equal
+print(b)
+
+
+
+
+
+
